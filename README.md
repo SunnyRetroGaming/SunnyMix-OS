@@ -1,126 +1,119 @@
-<div align="center">
-    <img src="_assets/readme/TSP-Logo.png">
-    
-_Get the best from your TrimUI Smart Pro_  
-</div>
+# SunnyMix-OS – TrimUI Brick Port
 
+Welcome to **SunnyMix-OS** – the open-source community port of CrossMix OS, specially tailored for the TrimUI Brick!
 
-<div align="center">
-  <a href="https://github.com/cizia64/CrossMix-OS/releases/latest">
-    <img src="_assets/readme/download.png" alt="Download" style="width: 300px;">
-  </a>
-</div>
+---
 
-&nbsp;<br/>
+## Motivation
 
+Recently, some companies have been selling commercial Brick ports based on the free and open-source CrossMix OS, bundled exclusively with expensive SD cards.  
+I believe software like CrossMix OS should stay **free and open**—so everyone can enjoy and benefit from it.
 
+With **SunnyMix-OS**, my goal is to ensure all Brick owners have access to a transparent, cost-free, and community-driven version, with no hidden costs or restrictions.
 
-<p>&nbsp;</p>
+Development on the original project has unfortunately slowed since commercial versions started circulating.  
+With this open-source port, I want to help keep the community active and independent!
 
-![bar](https://github.com/user-attachments/assets/730a4dd6-5f33-4274-9959-b188f3013142)
+---
 
-<p>&nbsp;</p>
+## About this project
 
-<p align="center"><img src="https://github.com/user-attachments/assets/2339e8fd-cdac-4d2b-938b-edae23facb82" width="200"></p>
+**SunnyMix-OS** is a dedicated, customized port of CrossMix OS for the TrimUI Brick, specifically tuned for the hardware, 1024x768 display, and classic button layout (no analog stick) of the Brick.
 
-&nbsp;<br/>
+**Note:**  
+There is **no support** for the TrimUI Smart Pro in this project.  
+If you have a Smart Pro, please use the [original CrossMix OS project](https://github.com/cizia64/CrossMix-OS).
 
+---
 
-# Introduction
+## Features
 
-CrossMix-OS, the OS which elevates your TrimUI Smart Pro to new heights. 
+- Fully optimized for the TrimUI Brick’s 3.2" 1024x768 IPS display
+- Classic button mapping: D-Pad + ABXY + Start/Select (**no analog stick**)
+- Adapted system scripts and RetroArch configurations for the Brick
+- Includes relevant bug fixes and improvements from OG Firmware 1.1.0 and CrossMix OS
+- Features removed or tweaked if not available or meaningful on the Brick
 
-CrossMix-OS uses TrimUI Stock user interface with refined configurations, new features, new emulators and new apps. There are so many differences that CrossMix can be considered an dédicated OS in its own right.
+---
 
-Designed with the community in mind, CrossMix-OS caters to developers and creators alike. It supports a wide range of customizations, including themes, icon packs, background packs, templates for "Best" collections, and automatic overlay configurations.
+## Installation
 
-As a completely free and open-source platform, CrossMix-OS invites you to explore, contribute, and customize to your heart's content.
+**Important:**  
+SunnyMix-OS is designed for the TrimUI Brick only.  
+Follow these steps carefully to avoid data loss or device issues!
 
-&nbsp;<br/>&nbsp;<br/>
+### 1. Prepare your SD card
 
+- **Backup your games, BIOS, and save files!**  
+  If you have personal files (like ROMs, BIOS, or savegames) from your previous setup, copy them to your computer for safekeeping.
+- **Format your SD card to FAT32:**  
+  The SD card **must be formatted as FAT32** for the TrimUI Brick to work correctly.  
+  - On Windows: Use the “SD Card Formatter” tool or “GUIformat” for cards larger than 32GB  
+  - On macOS: Use “Disk Utility” → “MS-DOS (FAT)”  
+  - On Linux: Use `mkfs.fat -F32 /dev/sdX`
 
-![bar](https://github.com/user-attachments/assets/730a4dd6-5f33-4274-9959-b188f3013142)
+### 2. Copy SunnyMix-OS files
 
-&nbsp;<br/>
+- Download the latest **SunnyMix-OS** release from GitHub.
+- Extract the ZIP archive (if needed).
+- Copy **all files and folders** from the SunnyMix-OS package to the root of your empty, freshly formatted SD card.
 
-# Getting Started
+### 3. Add your games, BIOS, and saves
 
-First take a look to CrossMix Wiki, below are the different sections:
+- Copy your ROMs, BIOS files, and savegames (if needed) into the appropriate folders on the SD card, just as you did previously.
 
-&nbsp;<br/>
+### 4. Eject and insert the SD card
 
-## 🏠[Home](https://github.com/cizia64/CrossMix-OS/wiki/Home)
+- Safely eject the SD card from your computer.
+- Insert the SD card into your TrimUI Brick.
 
-## 🛠️ [Installation](https://github.com/cizia64/CrossMix-OS/wiki/Installation)
+### 5. First boot
 
-## 🎮 [Emulators](https://github.com/cizia64/CrossMix-OS/wiki/Emulators)
+- Turn on your TrimUI Brick.
+- SunnyMix-OS will start automatically.
+- The first boot may take a little longer as settings and files are initialized.
 
-## <img src="https://avatars.githubusercontent.com/u/96267164?s=200&v=4" width="20"> [PortMaster](https://github.com/cizia64/CrossMix-OS/wiki/PortMaster)
+---
 
-## :iphone: [Apps](https://github.com/cizia64/CrossMix-OS/wiki/apps)
+**Tip:**  
+If something goes wrong (e.g., black screen, no boot):
+- Reformat the SD card and start the installation again from scratch.
+- Make sure all files were copied correctly and that the SD card is really FAT32.
 
-## ⌨️ [Shortcuts](https://github.com/cizia64/CrossMix-OS/wiki/shortcuts)
+---
 
-## ❔ [FAQ](https://github.com/cizia64/CrossMix-OS/wiki/FAQ)
+**Warning:**  
+SunnyMix-OS **is only for TrimUI Brick** – do not install it on other devices!  
+All installation is at your own risk.
 
-## 🔧 [Advanced Guides](https://github.com/cizia64/CrossMix-OS/wiki/Advanced-Guides)
+---
 
-## 🛈 [About](https://github.com/cizia64/CrossMix-OS/wiki/About)
+## Known differences & notes
 
-## 🎁 [Contributing](https://github.com/cizia64/CrossMix-OS/wiki/Contributing)
+- **No support for TrimUI Smart Pro!**
+- No analog stick support
+- Display resolution and controls fully adapted to the Brick
+- Features or fixes from OG firmware were only merged if relevant and compatible with CrossMix OS  
+  (See details in [CHANGES.md](CHANGES.md))
 
-&nbsp;<br/>&nbsp;<br/>
+---
 
-![bar](https://github.com/user-attachments/assets/730a4dd6-5f33-4274-9959-b188f3013142)
+## Issues & Feedback
 
-<p>&nbsp;</p>
+If you encounter any problems, **please open an issue** on GitHub.  
+The more details you provide, the faster we can resolve it!
 
-# Some words from the author
+---
 
-I'm Cizia, a passionate retrogamer. I love the TrimUI Smart Pro, but I felt it deserved a more mature OS, better configured, and with more options. I worked tirelessly to create an image that meets my standards, and today, I'm sharing it with you.
+## Acknowledgments
 
-There are some features I'm particularly proud of, such as:
+- [cizia64/CrossMix-OS](https://github.com/cizia64/CrossMix-OS) – original project and inspiration
+- The TrimUI community for feedback and support
 
-- **Background and icon selectors**: it completes well the native theme selector.
-- **Overlay selector**: Configure your default display ratio and overlay in one click for all platforms, plus new dedicated overlays.
-- **SwanStation 16/9 mode launcher**.
-- **Extensive work on emulator launchers and configuration**.
-- **Default customization of the OS**: custom theme, icons and backgrounds, Polish language added and many new tools.
-- **Firmware Update Wizard**: an automatic guide to help user to update if necessary.
-- **Best packs standardization**: generic launcher, game shortcuts support and images on folders.
+---
 
-I would also like to extend a warm thank you to Kloptops for [PortMaster and his tools](https://github.com/kloptops/TRIMUI_EX) which are deeply used in CrossMix-OS.
+## License
 
-Thanks to Schmurtzm for his numerous scripts, I have revised and integrated them into CrossMix-OS, which have greatly enhanced the available features:
-- [PSX Analog Detector](https://github.com/schmurtzm/TrimUI-Smart-Pro/blob/main/SystemTools/Apps/SystemTools/Menu/EMULATORS/PSX%20Analog%20Detector.sh): Detects PSX games compatible with analog sticks and automatically sets the correct controller configuration.
-- [BootLogo](https://github.com/schmurtzm/TrimUI-Smart-Pro/tree/main/Bootlogo): An app for easy boot logo flashing on TrimUI Smart Pro.
-- [EmuCleaner](https://github.com/schmurtzm/TrimUI-Smart-Pro/tree/main/EmuCleaner): An app to display only emulators with ROMs installed.
-- [System Tools](https://github.com/schmurtzm/TrimUI-Smart-Pro/tree/main/SystemTools): An app to centralize different apps/scripts in one place.
-- [Resume at Boot](https://github.com/schmurtzm/TrimUI-Smart-Pro/tree/main/ResumeAtBoot): A set of scripts to add a resume game on startup feature.
-- [Subfolder config override finder](https://github.com/libretro/RetroArch/issues/12021#issuecomment-2107300989) is also used in CrossMix-OS.
-- [Scraper](https://github.com/schmurtzm/TrimUI-Smart-Pro/tree/main/Scraper): an app to automatically download boxarts.
+This project uses the same license as the original CrossMix OS (see [LICENSE](LICENSE) or [CrossMix OS GitHub](https://github.com/cizia64/CrossMix-OS)).
 
-
-I hope CrossMix-OS will become a reference among OSes based on the stock OS and continue to improve with community support.
-
-&nbsp;<br/>&nbsp;<br/>
-
-![bar](https://github.com/user-attachments/assets/730a4dd6-5f33-4274-9959-b188f3013142)
-
-<p>&nbsp;</p>
-
-## Help the CrossMix-OS project
-
-I have more ideas and improvements for this project, and you might have some too. Don't hesitate to share them!
-
-Contribute to this repo by making a Pull Request. If you have an improvement to propose and don't know how to use GitHub, send me a message!
-
-Feel free to reach out to me to report bugs, request features, or just chat on **[Discord](https://discord.gg/Jd2azKX)** or on **[Github Issues](https://github.com/cizia64/CrossMix-OS/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)**
-
-If you enjoy my work and want to support the countless hours/days invested, here are my sponsors:
-
-- [![Patreon](_assets/readme/patreon.png)](https://patreon.com/Cizia)
-- [![Buy Me a Coffee](_assets/readme/bmc.png)](https://www.buymeacoffee.com/cizia)
-- [![ko-fi](_assets/readme/ko-fi.png)](https://ko-fi.com/H2H7YPH3H)
-
-
+---
